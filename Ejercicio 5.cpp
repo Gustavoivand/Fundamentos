@@ -13,7 +13,7 @@ cin.getline(frases[k], sizeof(frases[0]));
 if (strlen(frases[k])==0)
 break;
 }
-//cambios
+//cambios totales
 cout << endl << "Las frases ingresados son :" << endl;
 for (i = 0; i < k; i++)
 cout << frases[i] << endl;
