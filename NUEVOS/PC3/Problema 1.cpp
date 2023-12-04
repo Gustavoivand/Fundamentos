@@ -30,7 +30,7 @@ bool Buscar(int valor,int* vector, int numero){
 }
 void recortarMatriz(int** A,int f,int g,int** B,int* FilA,int Filas,int* ColA,int Columnas){
 	//recortar filas
-	int i,j,k,m,n;
+	int i,j,m,n;
 
 	for (i=0,m=0;i<f;i++,m++){
         	for (j=0;j<g;j++){
@@ -82,7 +82,7 @@ int main() {
     int FilA[Filas]={0,5};
 	//vector de eliminacion de columnas
     int ColA[Columnas]={0,5,6};
-	//Declaración de nueva matriz
+	//Declaraciï¿½n de nueva matriz
 	int** B= new int* [f];
 	for (i = 0; i < (f); i++){
 	    *(B + i) = new int[g];
