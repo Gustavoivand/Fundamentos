@@ -1,0 +1,2 @@
+El poligono de menor area es un triangulo de area : 0.5
+El poligono de mayor area es un triangulo de area : 2
