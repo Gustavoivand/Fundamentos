@@ -78,7 +78,7 @@ void imprimirmatriz(MiEstructura ***matriz,int filas,int columnas){
 }
 
 void imprimirmatriz(MiEstructura ***matriz,int filas,int columnas, int maximo){
-	cout<<"Matriz A:"<<endl;
+	cout<<"El máximo valor de suma se encuentra en:"<<endl;
 	for (int i = 0; i < filas; i++)
 	{
 		for (int j = 0; j < columnas; j++)
