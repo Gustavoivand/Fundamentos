@@ -13,7 +13,7 @@ struct empleados
 //FUNCION LLENAR BINARIO
 void llenarbinario(empleados empleado[], int cantidad){
 	// Abrir el archivo en modo de escritura binaria
-	ofstream archivo("C:/PC4/empleados.bin", ios::binary);
+	ofstream archivo("empleados.bin", ios::binary);
 	if (archivo.is_open()) { // Verificamos si el archivo esta abierto
 		// Escribir los datos en el archivo
 		for(int i=0;i<cantidad;i++){
@@ -34,17 +34,17 @@ void llenarbinario(empleados empleado[], int cantidad){
 }
  //FUNCION LEER BINARIO
  void leerbinario(){
-	// Variables para almacenar los datos leídos
+	// Variables para almacenar los datos leï¿½dos
 	int id;
 	float salario;
 	string nombre;
 	// Abrir el archivo en modo de lectura binaria
-	ifstream archivo("C:/PC4/empleados.bin", ios::binary);
+	ifstream archivo("empleados.bin", ios::binary);
 	if (archivo.is_open()) {
 		while (archivo.read(reinterpret_cast<char*>(&id), sizeof(id))) {
 	 		archivo.read(reinterpret_cast<char*>(&salario), sizeof(salario));
 	 		getline(archivo, nombre, '\0');
-	 		// Mostrar los datos leídos
+	 		// Mostrar los datos leï¿½dos
 	 		cout << "ID: " << id <<", ";
 			cout << "Nombre: Empleado " << nombre <<", ";
 			cout << "Salario: $" << salario << endl;
@@ -57,17 +57,17 @@ void llenarbinario(empleados empleado[], int cantidad){
 	}
  }
  void buscarporsalario(float minimo,float maximo){
- 	// Variables para almacenar los datos leídos
+ 	// Variables para almacenar los datos leï¿½dos
 	int id;
 	float salario;
 	string nombre;
 	// Abrir el archivo en modo de lectura binaria
-	ifstream archivo("C:/PC4/empleados.bin", ios::binary);
+	ifstream archivo("empleados.bin", ios::binary);
 	if (archivo.is_open()) {
 		while (archivo.read(reinterpret_cast<char*>(&id), sizeof(id))) {
 	 		archivo.read(reinterpret_cast<char*>(&salario), sizeof(salario));
 	 		getline(archivo, nombre, '\0');
-	 		// Mostrar los datos leídos
+	 		// Mostrar los datos leï¿½dos
 	 		if(salario>=minimo and salario<=maximo){
 	 		cout << "ID: " << id <<", ";
 			cout << "Nombre: Empleado " << nombre <<", ";
