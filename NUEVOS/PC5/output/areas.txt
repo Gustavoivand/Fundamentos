@@ -1,0 +1,2 @@
+El area mínima es: 0.5
+El area máxima es: 2
